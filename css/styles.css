@@ -312,6 +312,32 @@ select option { background: var(--surface2); color: var(--text); }
 .btn-generate:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(232,255,71,0.3); }
 .btn-generate:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
+.planner-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-reset-plan {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 13px 24px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-reset-plan:hover {
+  border-color: var(--error);
+  color: var(--error);
+  transform: translateY(-1px);
+}
+
 .btn-next-month {
   background: transparent;
   color: var(--accent);

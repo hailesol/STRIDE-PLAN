@@ -188,6 +188,7 @@ function swapWorkouts(fromDay, toDay, key) {
   month[toDay]   = { ...temp,         day: toDay };
   updateCell(fromDay, key);
   updateCell(toDay,   key);
+  window.persistCurrentUserPlan?.();
   showToast(`Day ${fromDay} ↔ Day ${toDay} swapped`, 'info');
 }
 
